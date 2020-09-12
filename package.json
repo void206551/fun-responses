@@ -17,5 +17,13 @@
     "joke",
     "pickup",
     "line"
-  ]
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/void206551/fun-responses.git"
+  },
+  "bugs": {
+    "url": "https://github.com/void206551/fun-responses/issues"
+  },
+  "homepage": "https://github.com/void206551/fun-responses#readme"
 }
