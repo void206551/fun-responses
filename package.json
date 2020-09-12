@@ -25,5 +25,8 @@
   "bugs": {
     "url": "https://github.com/void206551/fun-responses/issues"
   },
-  "homepage": "https://github.com/void206551/fun-responses#readme"
+  "homepage": "https://void206551.github.io/fun-responses/",
+  "directories": {
+    "doc": "docs"
+  }
 }
