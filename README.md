@@ -11,23 +11,22 @@ How to use:
 ```javascript
 var funRes = require('fun-responses')
 //Sends joke into the console. 
-console.log(funRes.joke)
+console.log(funRes.joke())
 ```
 
 Example Discord use:
 ```javascript
 var  funRes = require('fun-responses')
 const  Discord = require("discord.js");
-const  embed = new  Discord.RichEmbed()
-    .setDescription(funRes.joke)
-    .setColor(0x095256)
+const  embed = new  Discord.MessageEmbed()
+    .setDescription(funRes.joke())
 message.channel.send(embed).then().catch(console.error);
 ```
 
 Use|Responses
 -|-
-`funRes.joke`|37
-`funRes.pickup`|35
-`funRes.topic`|44
-`funRes.roast`|22
-`funRes.toast`|6
+`funRes.joke()`|37
+`funRes.pickup()`|41
+`funRes.topic()`|44
+`funRes.roast()`|22
+`funRes.toast()`|6
