@@ -1,12 +1,10 @@
 const funny = './fun.json';
 
-const fuWeb = 'https://void206551.dev/projects/fun/fun.json'
-
 // Joke call
 exports.joke = function () {
     var {
         joke
-    } = require(fuWeb);
+    } = require(funny);
     var resJoke = joke[Math.floor(Math.random() * joke.length)];
     return resJoke
 }
@@ -15,7 +13,7 @@ exports.joke = function () {
 exports.pickup = function () {
     var {
         pickup
-    } = require(fuWeb);
+    } = require(funny);
     var resPick = pickup[Math.floor(Math.random() * pickup.length)];
     return resPick
 }
@@ -24,7 +22,7 @@ exports.pickup = function () {
 exports.topic = function () {
     var {
         topic
-    } = require(fuWeb);
+    } = require(funny);
     var resTopic = topic[Math.floor(Math.random() * topic.length)];
     return resTopic
 }
@@ -33,7 +31,7 @@ exports.topic = function () {
 exports.roast = function () {
     var {
         roast
-    } = require(fuWeb);
+    } = require(funny);
     var resRoast = roast[Math.floor(Math.random() * roast.length)];
     return resRoast
 }
@@ -42,7 +40,7 @@ exports.roast = function () {
 exports.toast = function () {
     var {
         toast
-    } = require(fuWeb);
+    } = require(funny);
     var resToast = toast[Math.floor(Math.random() * toast.length)];
     return resToast
 }
