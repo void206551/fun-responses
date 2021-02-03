@@ -1,6 +1,6 @@
 {
   "name": "fun-responses",
-  "version": "1.2.10",
+  "version": "1.2.11",
   "description": "An API for getting pickup lines, jokes, roasts, toasts, and open-ended questions.",
   "main": "index.js",
   "scripts": {
@@ -9,9 +9,8 @@
   "author": "Jason O'Donnell",
   "license": "ISC",
   "dependencies": {
-    "node-fetch": "^2.6.1"
+    "got": "^11.8.1"
   },
-  "devDependencies": {},
   "keywords": [
     "fun",
     "joke",

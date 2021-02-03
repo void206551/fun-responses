@@ -9,18 +9,22 @@ npm install fun-responses
 
 How to use:
 ```javascript
-var funRes = require('fun-responses')
-//Sends joke into the console. 
-console.log(funRes.joke())
-```
+const fun = require('fun-responses');
 
-Example Discord use:
-```javascript
-var  funRes = require('fun-responses')
-const  Discord = require("discord.js");
-const  embed = new  Discord.MessageEmbed()
-    .setDescription(funRes.joke())
-message.channel.send(embed).then().catch(console.error);
+async function run() {
+    console.log(' - Joke')
+    console.log(await fun.joke())
+    console.log(' - Pickup Line')
+    console.log(await fun.pickup())
+    console.log(' - Topic')
+    console.log(await fun.topic())
+    console.log(' - Roast')
+    console.log(await fun.roast())
+    console.log(' - Toast')
+    console.log(await fun.toast())
+}
+run()
+
 ```
 
 Use|Responses

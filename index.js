@@ -1,46 +1,50 @@
-const funny = './fun.json';
-
 // Joke call
-exports.joke = function () {
-    var {
-        joke
-    } = require(funny);
-    var resJoke = joke[Math.floor(Math.random() * joke.length)];
+exports.joke = async function () {
+
+    const jResponse = require('./imports/joke.js')
+
+    let resJoke = await jResponse.jRequest()
+
     return resJoke
+
 }
 
 // Pickup line call
-exports.pickup = function () {
-    var {
-        pickup
-    } = require(funny);
-    var resPick = pickup[Math.floor(Math.random() * pickup.length)];
+exports.pickup = async function () {
+
+    const pResponse = require('./imports/pickup.js')
+
+    let resPick = await pResponse.pRequest()
+
     return resPick
 }
 
 // Topic call
-exports.topic = function () {
-    var {
-        topic
-    } = require(funny);
-    var resTopic = topic[Math.floor(Math.random() * topic.length)];
+exports.topic = async function () {
+
+    const tResponse = require('./imports/topic.js')
+
+    let resTopic = await tResponse.tRequest()
+
     return resTopic
 }
 
 // Roast call
-exports.roast = function () {
-    var {
-        roast
-    } = require(funny);
-    var resRoast = roast[Math.floor(Math.random() * roast.length)];
+exports.roast = async function () {
+
+    const rResponse = require('./imports/roast.js')
+
+    let resRoast = await rResponse.rRequest()
+
     return resRoast
 }
 
 // Toast call
-exports.toast = function () {
-    var {
-        toast
-    } = require(funny);
-    var resToast = toast[Math.floor(Math.random() * toast.length)];
+exports.toast = async function () {
+
+    const toResponse = require('./imports/toast.js')
+
+    let resToast = await toResponse.toRequest()
+
     return resToast
 }
