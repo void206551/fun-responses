@@ -1,4 +1,4 @@
-const url = 'https://void206551.dev/projects/melody/resources/fun/fun.json'
+const url = 'https://void206551.dev/projects/fun/fun.json'
 var got = require('got')
 // Joke call
 exports.jRequest = async function () {
