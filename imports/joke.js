@@ -6,6 +6,5 @@ exports.jRequest = async function () {
     const body = await got(url).json();
     let joke = body[0].joke
     let resJoke = joke[Math.floor(Math.random() * joke.length)]
-
     return resJoke
 }
